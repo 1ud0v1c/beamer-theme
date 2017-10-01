@@ -1,8 +1,32 @@
 \usepackage{tikz}
 \usetikzlibrary{calc}
 \usepackage[none]{hyphenat}
+\usepackage[utf8]{inputenc}
 
+% Variables
 \newcounter{showSlideNumbers}
 \setcounter{showSlideNumbers}{1}
 \newcounter{showSlideTotal}
 \setcounter{showSlideTotal}{1}
+
+% Colors
+\definecolor{red}{RGB}{230,37,52}
+\definecolor{black}{RGB}{43,40,40}
+\definecolor{blue}{RGB}{22,190,207}
+\definecolor{white}{RGB}{255,255,243}
+\definecolor{grey}{RGB}{107,110,108}
+
+% Beamer theme 
+\setbeamercolor{background canvas}{bg=grey!30!black}
+\setbeamercolor{title}{fg=white}
+\setbeamercolor{frametitle}{fg=white,bg=red}
+
+\setbeamercolor{section in toc}{fg=white}
+\setbeamercolor{subsection in toc}{fg=white}
+
+\setbeamercolor{itemize item}{fg=blue}
+\setbeamercolor{enumerate item}{fg=blue}
+
+% Disable navigation symbol
+\setbeamertemplate{navigation symbols}{}
+
