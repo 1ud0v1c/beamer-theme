@@ -17,7 +17,7 @@
 \definecolor{grey}{RGB}{107,110,108}
 
 % Beamer theme 
-\setbeamercolor{background canvas}{bg=grey!30!black}
+\setbeamercolor{background canvas}{bg=grey!50!black}
 \setbeamercolor{title}{fg=white}
 \setbeamercolor{frametitle}{fg=white,bg=red}
 
@@ -30,3 +30,13 @@
 % Disable navigation symbol
 \setbeamertemplate{navigation symbols}{}
 
+% Add page numbers on footer page
+\addtobeamertemplate{navigation symbols}{}{
+    \usebeamerfont{footline}
+    \usebeamercolor[fg]{footline}
+    \insertframenumber/\inserttotalframenumber
+}
+
+% Adjust page numbers colors & fonts
+\setbeamerfont{footline}{series=\bfseries,size={\fontsize{6}{8}}}
+\setbeamercolor{footline}{fg=white}
